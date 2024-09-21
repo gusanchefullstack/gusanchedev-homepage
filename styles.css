@@ -5,15 +5,16 @@
     --main: "IBM Plex Mono", monospace;
 
     /*colors*/
-    --black: #26282B;
+    --black: #26282b;
     --grey: #353941;
-    --dark-blue: #5F85DB;
-    --light-blue: #90B8F8;
-    --white: #E8E8E8;
+    --dark-blue: #5f85db;
+    --light-blue: #90b8f8;
+    --white: #e8e8e8;
+    --logo: #FEF9D9;
 
     /*Type scale*/
     --base-size: 1.2rem;
-    --scale: 1.25;
+    --scale: 1.2;
     --h1: calc(var(--h2) * var(--scale));
     --h2: calc(var(--h3) * var(--scale));
     --h3: calc(var(--h4) * var(--scale));
@@ -56,6 +57,8 @@
     font-size: var(--h1);
     font-weight: var(--bolder);
     color: var(--light-blue);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
   }
 
   h2 {
@@ -88,18 +91,74 @@
     font-size: var(--base-size);
     font-weight: var(--regular);
   }
-
 }
 
 @layer intro {
   .intro > .container {
-    background-image: radial-gradient( circle 976px at 51.2% 51%,  rgba(11,27,103,1) 0%, rgba(16,66,157,1) 0%, rgba(11,27,103,1) 17.3%, rgba(11,27,103,1) 58.8%, rgba(11,27,103,1) 71.4%, rgba(16,66,157,1) 100.2%, rgba(187,187,187,1) 100.2% );
+    background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
+    /* background-image: radial-gradient(
+      circle 976px at 51.2% 51%,
+      rgba(11, 27, 103, 1) 0%,
+      rgba(16, 66, 157, 1) 0%,
+      rgba(11, 27, 103, 1) 17.3%,
+      rgba(11, 27, 103, 1) 58.8%,
+      rgba(11, 27, 103, 1) 71.4%,
+      rgba(16, 66, 157, 1) 100.2%,
+      rgba(187, 187, 187, 1) 100.2%
+    ); */
     background-repeat: no-repeat;
-    padding: 4rem 4rem;
+    padding: 2rem 4rem;
     max-width: 90rem;
     margin: 0 auto;
   }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 1rem
+  }
+
+  nav > ul > li {
+    list-style: none;
+    
+  }
+
+  nav > ul > li > a {
+    text-decoration: none;
+    color: var(--light-blue);
+    font-weight: var(--bold);
+    font-size: var(--h6);
+  }
+
+  nav > ul > li > a:hover {
+    color: var(--white);
+  }
+
+  .logo {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo > svg {
+    width: 2.5rem;
+    fill: var(--logo);
+    margin-right: 1rem;
+  }
   .intro > .container > p {
     color: var(--white);
     padding-top: 2rem;
@@ -108,12 +167,13 @@
 
 @layer social {
   .social > .container {
-    background-image: radial-gradient( circle 976px at 51.2% 51%,  rgba(11,27,103,1) 0%, rgba(16,66,157,1) 0%, rgba(11,27,103,1) 17.3%, rgba(11,27,103,1) 58.8%, rgba(11,27,103,1) 71.4%, rgba(16,66,157,1) 100.2%, rgba(187,187,187,1) 100.2% );
+    background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
     background-repeat: no-repeat;
     padding: 4rem 4rem;
     max-width: 90rem;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 1rem;
@@ -127,14 +187,24 @@
     text-decoration: none;
   }
 
+  .container a:hover {
+    text-decoration: none;
+  }
+
   .social-icon {
     border: 2px solid var(--light-blue);
-    display: inline-block; 
-    border-radius: 0.25rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.25rem;
     padding: 0.5rem;
   }
-  .font-awesome  i {
+
+  .font-awesome {
+    color: var(--light-blue);
+  }
+
+  .font-awesome:hover {
     color: var(--white);
-    font-size: 1.2rem;
   }
 }
