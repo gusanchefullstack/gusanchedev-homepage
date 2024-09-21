@@ -38,9 +38,9 @@
           <nav>
             <ul>
               <li><a href="#projects">Projects</li></a>
-              <li><a href="#projects">Stack</li></a>
-              <li><a href="#projects">Blog</li></a>
-              <li><a href="#projects">Resources</li></a>
+              <li><a href="#stack">Stack</li></a>
+              <li><a href="https://hashnode.com/@gusanchedev" target="_blank">Blog</li></a>
+              <li><a href="#resources">Resources</li></a>
               <li><a href="#contact">Contact</li></a>
             </ul>
           </nav>
@@ -68,7 +68,7 @@
         </p>
       </div>
     </section>
-    <section class="projects">
+    <section id="projects" class="projects">
       <h3>Projects</h3>
       <p>
         I've defined my own learning path based mainly in the FreeCodeCamp
@@ -78,10 +78,25 @@
         in each phase below and any comment or sugestion is welcomed.
       </p>
     </section>
-    <section class="stack"></section>
-    <section class="resources"></section>
-    <section class="contact"></section>
-    <section class="social">
+    <section id="stack" class="stack"></section>
+    <section id="resources" class="resources"></section>
+    <section id="contact" class="contact">
+      <div class="container">
+      <h3>Contact</h3>
+      <form action="https://formspree.io/f/moqzzawr" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required>
+        <label for="email">Email</label>
+        <input type="email" name="mail" id="mail" required>
+        <label for="country">Country</label>
+        <input type="text" name="country" id="country" required>
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Please provide a message (min:30, max:200)" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    </section>
+    <section id="social" class="social">
       <footer class="container" id="contact">
         <a
           href="https://www.linkedin.com/in/gusanchefullstackdev/"
