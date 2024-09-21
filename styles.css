@@ -191,6 +191,13 @@
     font-family: var(--main);
   }
 
+  .contact > .container > form > select {
+    display: block;
+    padding: 0.2rem 0.5rem;
+    width: 100%;
+    font-family: var(--main);
+  }
+
   .contact > .container > form > textarea {
     display: block;
     padding: 0.5rem 0.5rem;
