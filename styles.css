@@ -174,7 +174,7 @@
 
   .contact > .container > form {
     padding-top: 1rem;
-    width: 25%;
+    width: 40%;
   }
 
   .contact > .container > form > label {
@@ -208,7 +208,7 @@
   .contact > .container > form > button {
     display: block;
     padding: 0.2rem 0.5rem;
-    width: 50%;
+    width: 30%;
     margin-top: 1.5rem;
     padding: 1rem;
     background-color: var(--dark-blue);
@@ -216,7 +216,7 @@
     font-weight: var(--bold);
     font-size: var(--h6);
     font-family: var(--main);
-    border-radius: 0.5rem;
+    border-radius: 0.1rem;
     border: none;
   }
 
